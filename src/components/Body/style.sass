@@ -1,0 +1,33 @@
+.body
+  display: flex
+  justify-content: center
+
+.lista
+  margin-top: 25px
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: 15px
+  list-style: none
+
+.msm
+  width: 100%
+  height: 100px
+  margin-top: 45px
+  text-align: center
+
+.msm h1
+  color: #999
+
+  
+
+@media only screen and (max-width: 1120px)
+  .lista
+    grid-template-columns: repeat(4, 1fr)
+
+@media only screen and (max-width: 905px)
+  .lista
+    grid-template-columns: repeat(3, 1fr)
+
+@media only screen and (max-width: 695px)
+  .lista
+    grid-template-columns: repeat(2, 1fr)
